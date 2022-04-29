@@ -111,6 +111,7 @@ a {
   color: #2196f3;
 }
 .nav-item .nav-link {
+  position: relative;
   width: 49px;
   height: 16px;
   font-weight: 500;
@@ -120,6 +121,18 @@ a {
 .nav-item .nav-link:hover,
 .nav-item .nav-link:focus {
   color:#2196f3;
+}
+.nav-item .nav-link::after {
+  position: absolute;
+  content:"";
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  width: 48px;
+  height: 4pх;
+  border-radius: 2px;
+  background-color: #2196f3;
+
 }
 .header-link-email {
   display: flex;
