@@ -379,7 +379,7 @@ p {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
-  justify-content :center;
+  justify-content: center;
   width: 370px;
   height: 70px;
 
@@ -783,6 +783,39 @@ p {
   display: flex;
   margin-right: 8px;
   text-align: center;
+}
+.overlay{
+  position: relative;
+  overflow: hidden;
+}
+.overlay-txt{
+    font-family: "Roboto",
+    sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+
+    transform: translateY(100%);
+    transition: transform var(--animation);
+    
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #ffffff;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.flex-element:hover .overlay-txt{
+  transform: translateY(0);
+
 }
 .title {
   min-width: 322px;
