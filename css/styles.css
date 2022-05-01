@@ -124,7 +124,6 @@ a {
 .nav-item .nav-link:focus {
   color:#2196f3;
 }
-
 .current::after {
 display: block;
 content: "";
